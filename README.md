@@ -1,5 +1,7 @@
 # Gated Slew
 
+Causes V/Oct signals to gradually change between voltages with either a linear or logrithmic profile, can work on upward changes in voltage, downward, or both. Slew rate is set with knob. Gate controls whether slew is applied or not.
+
 The circuit here is based on the [Yusynth gated slew](https://yusynth.net/Modular/EN/DUALSLEW/index.html) with minor tweaks to make it more Eurorack friendly. The changes I've made are thus:
 * Selected resistors appropriate for +/-12V rails,
 * Added polarity protection so that a backward power header doesn't fry anything (twin series schotty diodes: BAT54SL),
@@ -19,7 +21,7 @@ Jacks for:
 - V/Oct which will be slewed,
 - Gate to control when slew occurs (default is always).
 
-Potentiometer for slew rate.
+Knob for slew rate.
 
 Switches for
 - Linear or logrithmic slew,
